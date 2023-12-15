@@ -1,4 +1,4 @@
-# RX_Networking
+# RXNetworking
 
 [![CI Status](https://img.shields.io/travis/QuangTran/UnitImageLayerEditor.svg?style=flat)](https://travis-ci.org/QuangTran/UnitImageLayerEditor)
 [![Version](https://img.shields.io/cocoapods/v/UnitImageLayerEditor.svg?style=flat)](https://cocoapods.org/pods/UnitImageLayerEditor)
@@ -13,11 +13,11 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ## Installation
 
-RX_Networking is available through [CocoaPods](https://cocoapods.org). To install
+RXNetworking is available through [CocoaPods](https://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod 'RX_Networking'
+pod 'RXNetworking'
 ```
 
 ## Author
