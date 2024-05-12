@@ -40,6 +40,8 @@ public extension APIBundle {
         switch endpoint {
         case .unknow:
             return ""
+        case .upload(params: let params):
+            return ""
         }
     }
 }

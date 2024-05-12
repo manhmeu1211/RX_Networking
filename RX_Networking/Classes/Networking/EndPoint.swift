@@ -11,6 +11,7 @@ import Alamofire
 
 public enum EndPoint {
     case unknow
+    case upload(params: UploadParams)
     
     var httpMethod: HTTPMethod {
         switch self {
@@ -26,8 +27,13 @@ public enum EndPoint {
         switch self {
         case .unknow:
             params[""] = ""
+        case .upload(let param):
+            if let json = try? param.params.toJSON() as? [String: Any] {
+                params.merge(json, uniquingKeysWith: {_, _ in true })
+            }
         }
         return params
     }
 }
+
 
